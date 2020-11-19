@@ -1,6 +1,5 @@
 import React from "react";
-import { Switch, Route} from "react-router-dom";
-import HomePage from "../pages/homepage/homePage";
+import { Switch, Route,Redirect} from "react-router-dom";
 import QuoteDetailFirst from "../pages/quotedetailfirst/quotedetailfirst";
 import QuoteDetailSecond from "../pages/quotedetailsecond/quotedetailsecond";
 import QuoteDetailThird from "../pages/quotedetailthird/quotedetailthird";
@@ -12,11 +11,6 @@ import QuoteDetailSeven from "../pages/quotedetailseven/quotedetailseven";
 function Routes() {
   return (
       <Switch>
-        <Route
-          exact
-          path={`/`}
-          component={HomePage} 
-          />
         <Route
           exact
           path={`/quotedetailfirst`}
@@ -52,7 +46,7 @@ function Routes() {
           path={`/quotedetailseven`}
           component={QuoteDetailSeven}
         /> 
-        {/* <Redirect from="/" to='quotedetailfirst' /> */}
+        <Redirect from="/" to='quotedetailfirst' />
       </Switch>
   );
 }
