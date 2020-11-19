@@ -1,16 +1,16 @@
 import React from "react";
 import Header from '../../components/header';
-import { MDBBtn,MDBIcon } from "mdbreact";
-import { useHistory } from 'react-router-dom';
+
+import { Link} from 'react-router-dom';
 import "./homepage.css"
 
-const HomePage=()=>{
-    const history = useHistory();
-    const gotoBookPage=()=>{
-        history.push("/quotedetailfirst")
-    }
+function HomePage(props){
+    // const history = useHistory();
+    // const gotoBookPage=()=>{
+    //     history.push("/quotedetailfirst")
+    // }
     return(
-        <>
+        <div>
             <div className="fixTop">
                 <Header/>
             </div>
@@ -28,14 +28,14 @@ const HomePage=()=>{
             <div className="myMainTitle">
                 <h1 className="whatThis">Device Repair & Tech Support</h1>
                 <div className="gotoBookPage">
-                <MDBBtn rounded color="info"className="bookBtn"onClick={()=>gotoBookPage()}>
-                    <MDBIcon icon="bolt" />BOOK NOW
-                </MDBBtn>
+                <Link to="/quotedetailfirst">
+                <button type="button" className="btn btn-info bookBtn">BOOK/INQUARY NOW</button>
+                </Link>
                 </div>
             </div>
             
         
-        </>
+        </div>
     )
 }
 export default HomePage;
