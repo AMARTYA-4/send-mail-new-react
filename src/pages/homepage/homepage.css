@@ -1,22 +1,22 @@
 .Home{
     width: 100%;;
-    height:1000px;
+    height:700px;
 
 }
 .fixTop{
    background-blend-mode: darken;
 }
 .myMainTitle{
-    
+    width:100%;
     position: absolute;
     top:50%;
     align-items: center;
-    margin:0 auto !important;
+    margin:0 auto;
     padding: auto;
     filter: brightness(100%)!;
 }
 .whatThis{
-    font-size: 70px;
+    font-size: 40px;
     color: rgb(232, 235, 231);
     font-weight: bolder;
     margin:auto !important;
@@ -27,9 +27,9 @@
     
 }
 .bookBtn{
-    font-size: 30px;
-    border-radius: 40px;
-    padding: 6px 50px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 2px 10px;
 }
 @media (min-width:2400px){
     .myMainTitle{
@@ -37,7 +37,7 @@
         position: absolute;
         top:50%;
         align-items: center;
-        margin:0 600px;
+        margin:0 auto;
         padding: auto;
         filter: brightness(100%)!;
     }
@@ -59,7 +59,7 @@
         position: absolute;
         top:50%;
         align-items: center;
-        margin:0 400px !important;
+        margin:0 auto ;
         padding: auto;
         filter: brightness(100%)!;
     }
@@ -70,7 +70,7 @@
         position: absolute;
         top:50%;
         align-items: center;
-        margin:0 350px;
+        margin:0 auto;
         padding: auto;
         filter: brightness(100%)!;
     }
@@ -81,9 +81,54 @@
         position: absolute;
         top:50%;
         align-items: center;
-        margin:0 300px;
+        margin:0 auto;
         padding: auto;
         filter: brightness(100%)!;
     }
+    .bookBtn{
+        font-size: 30px;
+        border-radius: 40px;
+        padding: 6px 24px;
+    }
+    .whatThis{
+        font-size: 70px;
+        color: rgb(232, 235, 231);
+        font-weight: bolder;
+        margin:auto !important;
+        filter: brightness(100%);
+    }
+    .Home{
+        width: 100%;;
+        height:1000px;
+    
+    }
+    
 }
-
+@media (min-width:600px){
+    .myMainTitle{
+    
+        position: absolute;
+        top:50%;
+        align-items: center;
+        margin:0 auto;
+        padding: auto;
+        filter: brightness(100%)!;
+    }
+    .bookBtn{
+        font-size: 30px;
+        border-radius: 40px;
+        padding: 6px 24px;
+    }
+    .whatThis{
+        font-size: 50px;
+        color: rgb(232, 235, 231);
+        font-weight: bolder;
+        margin:auto !important;
+        filter: brightness(100%);
+    }
+    .Home{
+        width: 100%;;
+        height:1000px;
+    
+    }
+}
